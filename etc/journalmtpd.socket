@@ -1,0 +1,11 @@
+[Unit]
+Description=journalmtpd
+
+[Socket]
+ListenStream=/run/journalmtpd
+SocketUser=root
+SocketGroup=postfix
+SocketMode=0660
+
+[Install]
+WantedBy=sockets.target
